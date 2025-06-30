@@ -1,0 +1,110 @@
+.hero{
+    padding-top: 208px;
+    padding-bottom: 209px;
+    display: flex;
+    justify-content: flex-start;
+       background-image: linear-gradient($gradient-color,$gradient-color), url(../img/mobile/beard-mobile@1x.webp);
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: 448px;
+       @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+   background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/mobile/beard-mobile@2x.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+    @media screen and (min-width: 720px){
+        padding-top: 272px;
+    padding-bottom: 40px;
+    background-size: 720px;
+    
+    background-image: linear-gradient($gradient-color,$gradient-color), url(../img/tablet/beard-tablet@1x.webp);
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+   background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/tablet/beard-tablet@2x.webp);
+}
+    }
+
+
+    @media screen and (min-width: 1200px){
+        background-size: 1200px;
+        background-image: linear-gradient($gradient-color,$gradient-color), url(../img/destop/beard-destop@1x.webp);
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+   background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/destop/beard-destop@2x.webp);
+}
+    }
+
+
+    &__coment{
+        margin-bottom:20px ;
+        color: $line-color;
+font-family: "Open Sans";
+font-size: 11px;
+font-weight: 600;
+line-height: 1.5;
+text-transform: uppercase;
+        ::before{
+            content: "";
+        }
+    }
+    &__title{
+        margin-bottom: 20px;
+        color: $text-color;
+font-family: "Raleway";
+font-size: 48px;
+font-weight: 700;
+line-height: 1.5;
+letter-spacing: 2.4px;
+
+@media screen and (min-width: 1200px){
+    font-size: 72px;
+}
+    }
+    &__text{
+        margin-bottom: 144px;
+        color: $hero-text;
+font-family: "Open Sans";
+font-size: 16px;
+font-weight: 400;
+line-height: 1.62;
+letter-spacing: 0.32px;
+width: 357px;
+
+@media screen and (min-width: 720px){
+    font-size: 18px;
+line-height: 1.66;
+}
+    }
+    &__list{
+        display: flex;
+        justify-content: end;
+        gap: 24px;
+        color: $text-color;
+text-align: right;
+font-family: "Open Sans";
+font-size: 11px;
+font-weight: 600;
+line-height: 1.5;
+letter-spacing: 1.1px;
+    }
+}

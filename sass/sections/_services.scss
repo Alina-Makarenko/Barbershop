@@ -1,0 +1,63 @@
+.services {
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+
+  background-image: linear-gradient($bg-color, $bg-color),
+    url(../img/mobile/hand-mobile@1x.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 448px;
+
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient($bg-color, $bg-color),
+      url(../img/mobile/hand-mobile@2x.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+
+    @media screen and (min-width: 720px) {
+      padding: 100px 0px 100px 0px;
+
+      background-image: linear-gradient($bg-color, $bg-color),
+        url(../img/tablet/hand-tablet@1x.webp);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 720px;
+      @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient($bg-color, $bg-color),
+      url(../img/tablet/hand-tablet@2x.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+        @media screen and (min-width: 1200px) {
+          padding: 120px 0px 120px 0px;
+
+
+          background-image: linear-gradient($bg-color, $bg-color),
+            url(../img/destop/hand-desktop@1x.webp);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 1200px;
+          @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: linear-gradient($bg-color, $bg-color),
+              url(../img/destop/hand-desktop@2x.webp);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          }
+        }
+      }
+    
+

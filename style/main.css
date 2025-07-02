@@ -88,6 +88,7 @@ address {
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: 1.2px;
+  transition: color 300ms cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 .header__link:hover, .header__link:focus {
   color: #FF6C00;
@@ -308,4 +309,190 @@ address {
 .hero__link:hover::after {
   background-color: #FFF;
   display: block;
+}
+
+.about {
+  padding: 84px 0px 84px 0px;
+}
+.about .container {
+  display: flex;
+}
+.about__wrap {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+.about__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-right: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .about__list {
+    flex-direction: row;
+  }
+}
+.about__picture {
+  display: none;
+}
+@media screen and (min-width: 720px) {
+  .about__picture {
+    display: flex;
+  }
+}
+.about__coment {
+  margin-bottom: 20px;
+  color: rgb(48, 48, 48);
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.about__coment::before {
+  content: "";
+  width: 1px;
+  height: 60px;
+  background-color: rgb(48, 48, 48);
+  display: block;
+  transform: rotate(90deg);
+}
+.about__title {
+  width: 306px;
+  color: rgb(48, 48, 48);
+  font-family: "Raleway";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1.4px;
+}
+@media screen and (min-width: 1200px) {
+  .about__title {
+    width: 470px;
+    font-size: 42px;
+    letter-spacing: 2.1px;
+  }
+}
+.about__text {
+  margin-top: 20px;
+  color: rgb(85, 85, 85);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.32px;
+  width: 418px;
+}
+@media screen and (min-width: 720px) {
+  .about__text {
+    width: 330px;
+    font-size: 18px;
+    letter-spacing: 0.36px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__text {
+    width: 470px;
+  }
+}
+.about__texts {
+  margin-top: 20px;
+  color: rgb(85, 85, 85);
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.85;
+  letter-spacing: 0.28px;
+  width: 418px;
+}
+@media screen and (min-width: 720px) {
+  .about__texts {
+    width: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__texts {
+    width: 470px;
+  }
+}
+.about__btn {
+  color: rgb(48, 48, 48);
+  background-color: transparent;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  padding: 12px 20px;
+  margin-top: 40px;
+  transition: color, background-color, 300ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+@media screen and (min-width: 720px) {
+  .about__btn {
+    margin-top: 77px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__btn {
+    margin-top: 42px;
+  }
+}
+.about__btn:hover {
+  color: #FFF;
+  background-color: #FF6C00;
+}
+
+.services {
+  padding-top: 84px;
+  padding-bottom: 84px;
+  background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../img/mobile/hand-mobile@1x.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 448px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .services {
+    background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../img/mobile/hand-mobile@2x.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 720px) {
+  .services {
+    padding: 100px 0px 100px 0px;
+    background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../img/tablet/hand-tablet@1x.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 720px;
+  }
+}
+@media screen and (min-width: 720px) and (min-device-pixel-ratio: 2), screen and (min-width: 720px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 720px) and (min-resolution: 192dpi), screen and (min-width: 720px) and (min-resolution: 2dppx) {
+  .services {
+    background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../img/tablet/hand-tablet@2x.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services {
+    padding: 120px 0px 120px 0px;
+    background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../img/destop/hand-desktop@1x.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1200px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .services {
+    background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../img/destop/hand-desktop@2x.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }/*# sourceMappingURL=main.css.map */

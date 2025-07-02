@@ -17,98 +17,176 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./style/main.min.css">
+    <link rel="stylesheet" href="./style/main.min.css" />
   </head>
   <body>
-    <div class="container">
     <header class="header">
-      <div class="header__wrap">
-            <nav class="header__nav">
-        <ul class="header__list">
-            <li class="header__item"><a href="" class="header__link">About</a></li>
-            <li class="header__item"><a href="" class="header__link">Services and prices</a></li>
-            <li class="header__item"><a href="" class="header__link">Barbers</a></li>
-            <li class="header__item"><a href="" class="header__link">Contacts</a></li>
-        </ul>
-        </nav>
-        <ul class="header__items">
-            <li class="header__element"><a href="tel:+380441111111" class="header__contact">+38 044 111 11 11</a></li>
-            <li class="header__element"><a href="#" class="header__contact active">Online-booking</a></li>
-        </ul>
+      <div class="container">
+        <div class="header__wrap">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="" class="header__link">About</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">Services and prices</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">Barbers</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__items">
+            <li class="header__element">
+              <a href="tel:+380441111111" class="header__contact"
+                >+38 044 111 11 11</a
+              >
+            </li>
+            <li class="header__element">
+              <a href="#" class="header__contact active">Online-booking</a>
+            </li>
+          </ul>
         </div>
         <div class="header__box">
-        <a href="" class="header__log">
-            <img src="./img/logo.png" alt="" class="header__logo">
-            </svg>
-        </a>
-        <button type="button" class="header__btn">
-          <img src="./img/menu_40px (1).png" alt="" class="header__burger">
-        </button>
+          <a href="" class="header__log">
+            <img src="./img/logo.png" alt="" class="header__logo" />
+          </a>
+          <button type="button" class="header__btn">
+            <img src="./img/menu_40px (1).png" alt="" class="header__burger" />
+          </button>
         </div>
+      </div>
     </header>
-    </div>
+
     <main>
       <!-- Hero section -->
       <section class="hero">
         <div class="container">
           <div class="hero__box">
             <div class="hero__wrap">
-        <p class="hero__coment">A hair salon for men in Kyiv</p>
-        <h2 class="hero__title">BarberShop</h2>
-        <p class="hero__text">We are experts in trendy men’s haircuts.
-We work quickly, carefully and with style.</p>
-</div>
-<button type="button" class="hero__btn"><img src="./img/3.png" alt="" class="hero__picture"></button>
-</div>
-<ul class="hero__list">
-  <li class="hero__item"><a href="#" class="hero__link">Back</a></li>
-  <li class="hero__item"><a href="#" class="hero__link">Forward</a></li>
-</ul>
-</div>
+              <p class="hero__coment">A hair salon for men in Kyiv</p>
+              <h2 class="hero__title">BarberShop</h2>
+              <p class="hero__text">
+                We are experts in trendy men’s haircuts. We work quickly,
+                carefully and with style.
+              </p>
+            </div>
+            <button type="button" class="hero__btn">
+              <img src="./img/3.png" alt="" class="hero__picture" />
+            </button>
+          </div>
+          <ul class="hero__list">
+            <li class="hero__item"><a href="#" class="hero__link">Back</a></li>
+            <li class="hero__item">
+              <a href="#" class="hero__link">Forward</a>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- About -->
       <section class="about">
         <div class="container">
-          <h3 class="about__coment">About</h3>
+          <div class="about__wrap">
+          <ul class="about__list">
+            <li class="about__item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/destop/ear-desktop@1x.webp 1x,
+                    ./img/destop/ear-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/ear-tablet@1x.webp 1x,
+                    ./img/tablet/ear-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 720px)"
+                />
+                <img src="./img/ear.jpg" alt="" class="about__picture" />
+              </picture>
+            </li>
+            <li class="about__item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/destop/knife-desktop@1x.webp 1x,
+                    ./img/destop/knife-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet/knife-tablet@1x.webp 1x,
+                    ./img/tablet/knife-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 720px)"
+                />
+                <img src="./img/knife.png" alt="" class="about__picture" />
+              </picture>
+            </li>
+          </ul>
+          </div>
+          <div class="about__box">
+          <p class="about__coment">About</p>
           <h2 class="about__title">Best Barbershop in your city</h2>
-          <p class="about__text">If you want to add more confidence to your image, you should visit us</p>
-          <p class="about__texts">We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!</p>
+          <p class="about__text">
+            If you want to add more confidence to your image, you should visit
+            us
+          </p>
+          <p class="about__texts">
+            We are a team that never stops at what has been achieved and are
+            thirsty for changes. And when you fall into the hands of our master,
+            you will never be the same again. We are a team that is always "on
+            the same wave" with clients. Therefore, we are always ready to
+            improve everyone who comes to us!
+          </p>
           <button class="about__btn">online-booking</button>
-      </div>
+          </div>
+        </div>
       </section>
       <!-- Services and prices -->
       <section class="services">
         <div class="container">
-        <h3 class="services__coment">Spend your time with the best masters</h3>
-        <h2 class="services__title">Services and prices</h2>
-        <ul class="services__list">
-          <li class="services__item">Men’s haircut</li>
-          <li class="services__item">Beard trim</li>
-          <li class="services__item">Mustache trim</li>
-          <li class="services__item">Straight razor shave</li>
-          <li class="services__item">Trainee’s haircut</li>
-          <li class="services__item">Haircut under the nozzle</li>
-          <li class="services__item">Children’s haircut (0-12 y.o.)</li>
-          <li class="services__item">Camouflage of grey hair</li>
-        </ul>
-        <ul class="services__items">
-          <li class="services__element">from 300 uah.</li>
-          <li class="services__element">from 200 uah.</li>
-          <li class="services__element">from 200 uah.</li>
-          <li class="services__element">from 200 uah.</li>
-          <li class="services__element">from 50 uah.</li>
-          <li class="services__element">from 200 uah.</li>
-          <li class="services__element">from 300 uah.</li>
-          <li class="services__element">from 200 uah.</li>
-        </ul>
-        <button class="services__btn">online-booking</button>
+          <p class="services__coment">
+            Spend your time with the best masters
+          </p>
+          <h2 class="services__title">Services and prices</h2>
+          <ul class="services__list">
+            <li class="services__item">Men’s haircut</li>
+            <li class="services__item">Beard trim</li>
+            <li class="services__item">Mustache trim</li>
+            <li class="services__item">Straight razor shave</li>
+            <li class="services__item">Trainee’s haircut</li>
+            <li class="services__item">Haircut under the nozzle</li>
+            <li class="services__item">Children’s haircut (0-12 y.o.)</li>
+            <li class="services__item">Camouflage of grey hair</li>
+          </ul>
+          <ul class="services__items">
+            <li class="services__element">from 300 uah.</li>
+            <li class="services__element">from 200 uah.</li>
+            <li class="services__element">from 200 uah.</li>
+            <li class="services__element">from 200 uah.</li>
+            <li class="services__element">from 50 uah.</li>
+            <li class="services__element">from 200 uah.</li>
+            <li class="services__element">from 300 uah.</li>
+            <li class="services__element">from 200 uah.</li>
+          </ul>
+          <button class="services__btn">online-booking</button>
         </div>
       </section>
       <section class="old">
         <div class="container">
           <h3 class="old__coment">Old traditional school</h3>
           <h2 class="old__title">¿Why people come to us?</h2>
-          <p class="old__text">Only good things are said about us. But it's better to see and feel 1 time than read 10 times. </p>
+          <p class="old__text">
+            Only good things are said about us. But it's better to see and feel
+            1 time than read 10 times.
+          </p>
           <ul class="ol__list">
             <li class="old__item">
               <h2 class="old__title">600</h2>
@@ -142,6 +220,5 @@ We work quickly, carefully and with style.</p>
     <footer>
       <div class="container"></div>
     </footer>
-    
   </body>
 </html>

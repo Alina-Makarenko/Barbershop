@@ -446,7 +446,7 @@ address {
   background-color: #FF6C00;
 }
 
-.services {
+.service {
   padding-top: 84px;
   padding-bottom: 84px;
   background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../img/mobile/hand-mobile@1x.webp);
@@ -455,7 +455,7 @@ address {
   background-size: 448px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .services {
+  .service {
     background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../img/mobile/hand-mobile@2x.webp);
     background-repeat: no-repeat;
     background-position: center;
@@ -463,7 +463,7 @@ address {
   }
 }
 @media screen and (min-width: 720px) {
-  .services {
+  .service {
     padding: 100px 0px 100px 0px;
     background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../img/tablet/hand-tablet@1x.webp);
     background-repeat: no-repeat;
@@ -472,7 +472,7 @@ address {
   }
 }
 @media screen and (min-width: 720px) and (min-device-pixel-ratio: 2), screen and (min-width: 720px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 720px) and (min-resolution: 192dpi), screen and (min-width: 720px) and (min-resolution: 2dppx) {
-  .services {
+  .service {
     background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../img/tablet/hand-tablet@2x.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -480,7 +480,7 @@ address {
   }
 }
 @media screen and (min-width: 1200px) {
-  .services {
+  .service {
     padding: 120px 0px 120px 0px;
     background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../img/destop/hand-desktop@1x.webp);
     background-repeat: no-repeat;
@@ -489,10 +489,268 @@ address {
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .services {
+  .service {
     background-image: linear-gradient(rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../img/destop/hand-desktop@2x.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
+}
+.service__desc {
+  color: rgba(157, 164, 189, 0.6);
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.service__desc::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: rgba(157, 164, 189, 0.6);
+  display: block;
+}
+.service__title {
+  color: #FFF;
+  font-family: "Raleway";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  margin-bottom: 44px;
+  text-align: start;
+}
+@media screen and (min-width: 720px) {
+  .service__title {
+    font-size: 42px;
+  }
+}
+.service__list {
+  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  padding: 30px 20px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .service__list {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    background: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .service__item {
+    padding: 30px 21px 30px 20px;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+.service__elements {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.service__elements:first-child {
+  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.service__elements:nth-child(2) {
+  background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+.service__elem {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  position: relative;
+}
+.service__elem::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgb(157, 164, 189);
+  margin: 0 12px;
+}
+.service__heading {
+  color: rgb(157, 164, 189);
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42; /* 142.857% */
+  letter-spacing: 0.28px;
+  display: flex;
+  align-items: end;
+  word-break: keep-all;
+}
+@media screen and (min-width: 720px) {
+  .service__heading {
+    font-size: 18px;
+    line-height: 1.66;
+  }
+}
+.service__text {
+  color: #9DA4BD;
+  text-align: right;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42; /* 142.857% */
+  letter-spacing: 0.28px;
+  order: 1;
+}
+@media screen and (min-width: 720px) {
+  .service__text {
+    font-size: 18px;
+    line-height: 1.66;
+  }
+}
+.service__btn {
+  color: #FFF;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 44px;
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+}
+@media screen and (min-width: 1200px) {
+  .service__btn {
+    width: 160px;
+    height: 40px;
+  }
+}
+
+.old {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 720px) {
+  .old {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .old {
+    padding-top: 129px;
+    padding-bottom: 120px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .old .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+}
+.old__text {
+  color: rgb(48, 48, 48);
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.old__text::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: rgb(48, 48, 48);
+  flex-shrink: 0;
+}
+.old__title {
+  color: rgb(48, 48, 48);
+  font-family: "Raleway";
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 2.1px;
+  margin-bottom: 20px;
+}
+.old__texts {
+  color: rgb(85, 85, 85);
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.36px;
+  width: 418px;
+  margin-bottom: 44px;
+}
+@media screen and (min-width: 720px) {
+  .old__texts {
+    width: 500px;
+  }
+}
+.old__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  row-gap: 35px;
+}
+@media screen and (min-width: 720px) {
+  .old__list {
+    width: 450px;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .old__list {
+    margin-left: 0;
+  }
+}
+.old__item {
+  background-color: #FFF;
+  padding: 20px 35px 20px 36px;
+  flex-basis: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 720px) {
+  .old__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+.old__item:nth-child(even) {
+  transform: translateY(35px);
+}
+.old__box {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.old__number {
+  color: rgb(48, 48, 48);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 2.1px;
+}
+.old__picture {
+  width: 13px;
+  height: 13px;
+  transform: translateY(15px);
+}
+.old__subtitles {
+  color: rgb(48, 48, 48);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.5;
+  width: 122px;
 }/*# sourceMappingURL=main.css.map */
